@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+h2 {
+  text-align: center;
+}
+
+.display {
+  background-color: antiquewhite;
+  margin: 35px;
+  padding: 25px;
+}
+
+.main-container-App {
+  margin: 35px;
+  padding: 25px;
+}
