@@ -11,6 +11,11 @@ function App() {
 
   const [displayText, setDisplayText] = useState("Nothing to Display");
 
+  let AppCompbtn1 = () => {
+    console.log("App Component btn1 Clicked");
+    setDisplayText("App Component btn1 Clicked");
+  };
+
   return (
     <>
       <h1>Hi This is H1 Heading</h1>
@@ -27,7 +32,11 @@ function App() {
         <div>
           <h2>This is App Component</h2>
 
-          <button type="button" class="btn btn-primary">
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={AppCompbtn1}
+          >
             App Comp. btn1
           </button>
         </div>
