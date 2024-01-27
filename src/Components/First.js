@@ -11,7 +11,11 @@ function First(props) {
           <h2>This is First Component</h2>
           <h3>props are - </h3>
           <p>{props.one}</p>
-          <button type="button" className="btn btn-primary">
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={props.FirstCompbtn1}
+          >
             First Comp. btn1
           </button>
         </div>

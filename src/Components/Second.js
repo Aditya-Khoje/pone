@@ -12,7 +12,11 @@ export default function Second(props) {
           <h2>This is Second Component</h2>
           <h3>props are - </h3>
           <p>{props.one}</p>
-          <button type="button" className="btn btn-primary">
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={props.SecondCompbtn1}
+          >
             Second Comp. btn1
           </button>
         </div>

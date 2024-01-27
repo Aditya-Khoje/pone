@@ -16,6 +16,16 @@ function App() {
     setDisplayText("App Component btn1 Clicked");
   };
 
+  let FirstCompbtn1 = () => {
+    console.log("First Component btn1 Clicked");
+    setDisplayText("First Component btn1 Clicked");
+  };
+
+  let SecondCompbtn1 = () => {
+    console.log("Second Component btn1 Clicked");
+    setDisplayText("Second Component btn1 Clicked");
+  };
+
   return (
     <>
       <h1>Hi This is H1 Heading</h1>
@@ -44,8 +54,8 @@ function App() {
         <hr />
         <br />
       </div>
-      <First one={first_prop} />
-      <Second one={Second_prop} />
+      <First one={first_prop} FirstCompbtn1={FirstCompbtn1} />
+      <Second one={Second_prop} SecondCompbtn1={SecondCompbtn1} />
     </>
   );
 }
