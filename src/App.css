@@ -37,8 +37,11 @@
   }
 }
 
-h2 {
+h2,
+h1 {
   text-align: center;
+  margin: 10px;
+  padding: 10px;
 }
 
 .display {
@@ -51,4 +54,10 @@ h2 {
   background-color: antiquewhite;
   margin: 35px;
   padding: 25px;
+}
+
+.break {
+  border: solid black 10px;
+  height: 5px;
+  width: 100%;
 }
