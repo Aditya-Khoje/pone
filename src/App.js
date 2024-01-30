@@ -10,6 +10,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Components/About.js";
 import Contact from "./Components/Contact.js";
 import Login from "./Components/Login.js";
+import Home from "./Components/Home.js";
 
 function App() {
   let first_prop = "Hii This is First Prop";
@@ -32,12 +33,45 @@ function App() {
     setDisplayText("Second Component btn1 Clicked");
   };
 
+  const [gender, setGender] = useState("");
+
   return (
     <>
       <BrowserRouter>
         <Navbar />
 
         <h1>Hi This is H1 Heading</h1>
+        <br />
+        <hr />
+        {/* <h1>Gender : {gender}</h1>
+        <h2>
+          Gender :{" "}
+          <input
+            type="radio"
+            name="gender"
+            id=""
+            value="Male"
+            onClick={(e) => {
+              setGender("Male");
+              console.log(gender);
+            }}
+          />{" "}
+          Male
+          <input
+            type="radio"
+            name="gender"
+            id=""
+            value="Female"
+            onClick={(e) => {
+              setGender("Female");
+              console.log(gender);
+              alert("You Selected Female");
+            }}
+          />{" "}
+          Female
+        </h2> */}
+        <hr />
+        <br />
         <h2 className="display">
           Display Board
           <hr />
@@ -76,6 +110,7 @@ function App() {
         <br />
         <br />
         <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/contact" element={<Contact />} />
